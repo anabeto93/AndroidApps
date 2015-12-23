@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.richard.loginscreen.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/login_text"
+        android:id="@+id/txt_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/user_text"
+        android:id="@+id/txt_username"
+        android:layout_below="@+id/txt_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="78dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/pass_text"
+        android:id="@+id/txt_password"
+        android:layout_below="@+id/txt_username"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/attempts_text"
+        android:id="@+id/txt_attempts"
+        android:layout_below="@+id/txt_password"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/txt_attempts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:ems="10"
+        android:id="@+id/etxt_username"
+        android:layout_above="@+id/txt_password"
+        android:layout_alignStart="@+id/btn_login" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etxt_password"
+        android:layout_above="@+id/txt_attempts"
+        android:layout_alignStart="@+id/etxt_username" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/txt_attempt_count"
+        android:layout_alignTop="@+id/txt_attempts"
+        android:layout_alignStart="@+id/btn_login" />
+
+</RelativeLayout>

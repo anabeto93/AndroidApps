@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Login Screen</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_success_page">SuccessPage</string>
+    <string name="login_text">Login Page</string>
+    <string name="user_text">Username</string>
+    <string name="pass_text">Password</string>
+    <string name="attempts_text">Attempts</string>
+    <string name="btn_text">Login</string>
+    <string name="success_title">Sucess Page Title</string>
+    <string name="btn_switch">Switch Image</string>
+    <string name="title_activity_name_lists">NameLists</string>
+    <string name="name_text">See Names</string>
+</resources>
